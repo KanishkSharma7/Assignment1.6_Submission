@@ -5,6 +5,7 @@
   --card: #0f172a;
   --border: #1f2937;
   --accent: #60a5fa;
+  --accent-2: #34d399;
   --radius: 18px;
   --shadow: 0 10px 30px rgba(0,0,0,0.25);
 }
@@ -14,7 +15,7 @@ html, body, #root { height: 100%; }
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
   background:
     radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,0.12), transparent),
@@ -24,48 +25,201 @@ body {
 
 /* — Center the card both horizontally and vertically — */
 .page {
-  min-height: 100svh;            /* works well on mobile too */
+  min-height: 100svh;
   display: grid;
-  place-items: center;           /* centers both axes */
-  padding: 24px;                 /* breathing room on small screens */
+  place-items: center;
+  padding: 24px;
 }
 
 .card {
   width: 100%;
-  max-width: 720px;
-  background: rgba(15,23,42,0.9);
-  border: 1px solid var(--border);
+  max-width: 820px;
+  background: linear-gradient(180deg, rgba(15,23,42,0.92), rgba(10,14,20,0.9));
+  border: 1px solid rgba(255,255,255,0.03);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 28px;
   backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.header { text-align: center; margin-bottom: 16px; }
-.header h1 { margin: 0 0 6px; font-size: clamp(26px, 6vw, 42px); }
-.tagline { margin: 0; color: var(--muted); }
+/* header */
+.brand-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
 
+.brand-badge {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  color: #071021;
+  font-size: 18px;
+  box-shadow: 0 6px 18px rgba(96,165,250,0.08);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(20px, 3.6vw, 28px);
+  text-align: left;
+}
+
+.role {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* centered artifact headline */
+.artifact-title {
+  margin: 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+/* content sections */
+.content {
+  display: grid;
+  gap: 18px;
+}
+
+.intro h3, .value-prop h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.05rem;
+}
+
+.intro p, .value-prop p {
+  margin: 0;
+  color: var(--text);
+  line-height: 1.45;
+  font-size: 0.98rem;
+}
+
+/* skill chips */
+.skills {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.04);
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* deliverables grid */
+.deliverables {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  align-items: start;
+}
+
+/* each deliverable card */
+.deliverable {
+  background: linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 12px;
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* row to align button (and optionally title later) */
+.deliverable-row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* deliverable button (smaller visual weight than main .btn) */
+.btn.deliverable-btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  background: linear-gradient(90deg, rgba(96,165,250,0.12), rgba(52,211,153,0.06));
+  border: 1px solid rgba(255,255,255,0.035);
+  box-shadow: none;
+}
+
+/* description under each deliverable */
+.deliverable-desc {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
+/* links (buttons) fallback */
 .links {
-  margin-top: 22px;
+  margin-top: 4px;
   display: grid;
   gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
+/* base button style */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 14px 18px;
   border-radius: 14px;
-  border: 1px solid var(--border);
-  background: linear-gradient(180deg, rgba(17,24,39,0.95), rgba(17,24,39,0.75));
-  font-weight: 700;
+  border: 1px solid rgba(255,255,255,0.03);
+  background: linear-gradient(90deg, rgba(96,165,250,0.12), rgba(52,211,153,0.06));
+  font-weight: 800;
   text-decoration: none;
   color: var(--text);
-  transition: transform 80ms ease, border-color .2s ease, background .2s ease;
+  transition: transform 120ms ease, box-shadow 120ms ease, border-color .15s ease;
+  box-shadow: 0 6px 16px rgba(2,6,23,0.45);
 }
 
-.btn:hover { transform: translateY(-1px); border-color: #334155; }
-.btn:active { transform: translateY(0); }
-.btn:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(2,6,23,0.6);
+  border-color: rgba(255,255,255,0.06);
+}
+
+.btn:active { transform: translateY(-1px); }
+
+/* footer */
+.footer {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  padding-top: 6px;
+  border-top: 1px solid rgba(255,255,255,0.02);
+  margin-top: 6px;
+}
+
+.small-muted { color: var(--muted); font-size: 0.82rem; }
+
+/* responsiveness */
+@media (max-width: 580px) {
+  .card { padding: 20px; }
+  .brand-badge { width: 48px; height: 48px; font-size: 16px; }
+  .title { font-size: 18px; }
+  .deliverables { grid-template-columns: 1fr; }
+}
