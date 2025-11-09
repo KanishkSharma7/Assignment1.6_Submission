@@ -1,5 +1,6 @@
 :root{
-  --bg: #0b1220;
+  --bg-start: #0b1220;
+  --bg-end: #0e1628;
   --text: #e5e7eb;
   --muted: #94a3b8;
   --card: #0f172a;
@@ -17,10 +18,12 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text);
-  background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(96,165,250,0.12), transparent),
-    radial-gradient(800px 400px at 90% 110%, rgba(52,211,153,0.10), transparent),
-    var(--bg);
+
+  /* UNIFORM BACKGROUND: single smooth gradient + fixed attachment */
+  background: linear-gradient(180deg, var(--bg-start), var(--bg-end));
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* — Center the card both horizontally and vertically — */

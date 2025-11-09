@@ -76,7 +76,25 @@ export default function App() {
             </p>
           </div>
         </div>
+        
+        {/* ===== ARTIFACT 2 (new) ===== */}
+        <h2 className="artifact-title">Artifact 2</h2>
 
+                  <div className="deliverable">
+            <div className="deliverable-row">
+              <a
+                className="btn deliverable-btn"
+                href="https://docs.google.com/document/d/1_CZVslFjrc0wjPV0eeKfQ9HOHx2xr38QdKhi9PP3qPo/edit?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Machine Learning vs Deep Learning Comparison
+              </a>
+            </div>
+            <p className="deliverable-desc">
+              This report compares the fundamental differences between <strong>Machine Learning</strong> and <strong>Deep Learning</strong> using practical examples. It highlights how ML is suited for structured-data tasks (e.g., email spam detection) and DL excels at unstructured, high-dimensional problems (e.g., image recognition with CNNs), and discusses trade-offs in interpretability and compute.
+            </p>
+          </div>
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
           <div className="small-muted">Built with React • Deployed on Vercel</div>
