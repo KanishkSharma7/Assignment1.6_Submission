@@ -39,10 +39,9 @@ export default function App() {
           </div>
         </section>
 
-        {/* Centered artifact headline */}
+        {/* ARTIFACT 1 */}
         <h2 className="artifact-title">Artifact 1</h2>
 
-        {/* Deliverables grid: each deliverable has a button + short description */}
         <div className="deliverables">
           <div className="deliverable">
             <div className="deliverable-row">
@@ -76,25 +75,48 @@ export default function App() {
             </p>
           </div>
         </div>
-        
-        {/* ===== ARTIFACT 2 (new) ===== */}
+
+        {/* ARTIFACT 2 */}
         <h2 className="artifact-title">Artifact 2</h2>
 
-                  <div className="deliverable">
-            <div className="deliverable-row">
-              <a
-                className="btn deliverable-btn"
-                href="https://docs.google.com/document/d/1_CZVslFjrc0wjPV0eeKfQ9HOHx2xr38QdKhi9PP3qPo/edit?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                View Machine Learning vs Deep Learning Comparison
-              </a>
-            </div>
-            <p className="deliverable-desc">
-              This report compares the fundamental differences between <strong>Machine Learning</strong> and <strong>Deep Learning</strong> using practical examples. It highlights how ML is suited for structured-data tasks (e.g., email spam detection) and DL excels at unstructured, high-dimensional problems (e.g., image recognition with CNNs), and discusses trade-offs in interpretability and compute.
-            </p>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Machine Learning vs Deep Learning Comparison
+            </a>
           </div>
+
+          <p className="deliverable-desc">
+            This report compares the fundamental differences between <strong>Machine Learning</strong> and <strong>Deep Learning</strong> using practical examples. It highlights how ML is suited for structured-data tasks (e.g., email spam detection) and DL excels at unstructured, high-dimensional problems (e.g., image recognition with CNNs), and discusses trade-offs in interpretability and compute.
+          </p>
+        </div>
+
+        {/* ==================== ARTIFACT 3 ==================== */}
+        <h2 className="artifact-title">Artifact 3</h2>
+
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://student.schoolai.com/dot/spaces/join?code=AWSM-YKM1"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Machine Learning Training Methods Activity
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This interactive assignment involved working with a guided AI chatbot to explore machine learning training methods. Through a collaborative conversational workflow, I analyzed supervised, unsupervised, and reinforcement learning techniques, as well as optimization strategies and model training steps. The chatbot provided hints, feedback, and probing questions, enabling deeper reasoning and reinforcing conceptual understanding while improving my ability to apply ML theory to real-world scenarios.
+          </p>
+        </div>
+
+        {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
           <div className="small-muted">Built with React • Deployed on Vercel</div>
