@@ -115,6 +115,24 @@ export default function App() {
             This interactive assignment involved working with a guided AI chatbot to explore machine learning training methods. Through a collaborative conversational workflow, I analyzed supervised, unsupervised, and reinforcement learning techniques, as well as optimization strategies and model training steps. The chatbot provided hints, feedback, and probing questions, enabling deeper reasoning and reinforcing conceptual understanding while improving my ability to apply ML theory to real-world scenarios.
           </p>
         </div>
+        
+        <h2 className="artifact-title">Artifact 4</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://student.schoolai.com/student-space?sessionId=cmicl025j05nn102o420u21az"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Data Challenge Scenarios
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            In this activity, I worked through three machine learning data-challenge scenarios with the AI coach. In Scenario 1, I addressed missing fraud-related features by analyzing missingness patterns, adding indicators, and applying appropriate imputation while avoiding leakage. In Scenario 2, I handled extreme class imbalance in a loan-default dataset using resampling, class-weighting, stratified training, and cost-aligned evaluation metrics. In Scenario 3, I designed a real-time fraud detection pipeline focusing on streaming ingestion, low-latency feature engineering, late-feature strategies, drift monitoring, and deployment trade-offs. The conversation emphasized reasoning, trade-offs, and production-oriented ML practices.
+          </p>
+        </div>
 
         {/* FOOTER */}
         <footer className="footer">
