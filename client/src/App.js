@@ -83,7 +83,7 @@ export default function App() {
           <div className="deliverable-row">
             <a
               className="btn deliverable-btn"
-              href="#"
+              href="https://docs.google.com/document/d/1_CZVslFjrc0wjPV0eeKfQ9HOHx2xr38QdKhi9PP3qPo/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
@@ -131,6 +131,24 @@ export default function App() {
 
           <p className="deliverable-desc">
             In this activity, I worked through three machine learning data-challenge scenarios with the AI coach. In Scenario 1, I addressed missing fraud-related features by analyzing missingness patterns, adding indicators, and applying appropriate imputation while avoiding leakage. In Scenario 2, I handled extreme class imbalance in a loan-default dataset using resampling, class-weighting, stratified training, and cost-aligned evaluation metrics. In Scenario 3, I designed a real-time fraud detection pipeline focusing on streaming ingestion, low-latency feature engineering, late-feature strategies, drift monitoring, and deployment trade-offs. The conversation emphasized reasoning, trade-offs, and production-oriented ML practices.
+          </p>
+        </div>
+
+        <h2 className="artifact-title">Artifact 5</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1MQfHQeInB0_zHxNQH15sDCVjK_LLimYuM5viq6dgq1k/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View AI Ethics Case Study
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This artifact presents a critical ethical analysis of Facebook’s facial recognition practices, focusing on the 2020 lawsuit surrounding the unauthorized collection and use of biometric data. Through this case study, I examined three core ethical issues: informed consent for biometric data, secure and responsible handling of irreversible identifiers, and algorithmic bias impacting marginalized groups. The analysis reflects an evolution in my thinking, from viewing the incident as a legal compliance failure to understanding the deeper ethical responsibilities inherent in deploying AI systems at scale. By proposing mitigation strategies such as privacy-by-design, explicit opt-in consent, fairness audits, and governance frameworks, this work demonstrates my ability to critically assess real-world AI failures and apply ethical reasoning to future system design. This artifact highlights my commitment to responsible AI development that prioritizes user autonomy, fairness, and long-term societal impact.
           </p>
         </div>
 
