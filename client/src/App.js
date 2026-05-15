@@ -152,6 +152,30 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 6</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1IFOV-I9dSF5X-UBXAYGhYhqD6rfD-Eyq7Ozlki2AyGQ/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Machine Learning Algorithm Framework Comparison Infographic
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This artifact presents a visual framework of key machine learning algorithms and their applications across tabular data, computer vision, natural language processing, and generative AI. It classifies algorithms by learning type, explains how they work, and connects each method to practical real-world use cases.
+          </p>
+          <p className="deliverable-desc">
+            Machine learning algorithms are designed for different types of problems depending on the data, task, and desired outcome. Supervised learning algorithms such as Linear Regression, Logistic Regression, Decision Trees, Random Forests, Gradient Boosting, and Support Vector Machines are commonly used with labeled data for prediction and classification tasks. Unsupervised algorithms such as K-means Clustering and Principal Component Analysis help discover hidden patterns, group similar data, or reduce dataset complexity when labels are not available.
+          </p>
+          <p className="deliverable-desc">
+            This framework also shows how advanced AI domains connect to specific algorithms. Convolutional Neural Networks are widely used in computer vision because they can identify visual patterns in images, while Transformer models are important in NLP and generative AI because they understand context in text. Generative models such as GANs and Diffusion Models can create new content, including images, designs, and synthetic data. Overall, this artifact demonstrates how algorithm selection depends on the problem being solved and how different machine learning approaches support real-world AI applications.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
