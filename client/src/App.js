@@ -176,6 +176,24 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 7</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/presentation/d/1KsHrxGu0xKNLAhqqwJTf6WROsD1WZomqYubFF5DGX3o/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Presentation (Artifact for Assignment 2.4)
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This portfolio artifact explains the core components of neural networks, including layers, neurons, weights, activation functions, loss functions, and optimization algorithms. It also includes hands-on TensorFlow Playground experiments showing how model complexity, noise, and dataset structure affect learning performance.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
