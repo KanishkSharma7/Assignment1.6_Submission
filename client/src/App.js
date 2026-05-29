@@ -194,6 +194,32 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 8</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/presentation/d/1SY1ZehbuqLl0f6SSPgEMWaMeu1o3oxkWkFOe5U_zwUA/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Slide Deck
+            </a>
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1TclcOyYYwmROGXCAUTxMmRCii6YdXru_0itzQc3gU2A/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Explanatory Document
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This portfolio artifact explains how advanced generative AI large language models are trained, from data collection and tokenization to pretraining, fine-tuning, safety alignment, and deployment. It also highlights the major resource costs involved, including data, compute power, energy consumption, and training time, showing how technical infrastructure directly impacts model performance, cost, and reliability.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
