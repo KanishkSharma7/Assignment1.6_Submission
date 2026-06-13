@@ -220,6 +220,35 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 9</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/presentation/d/1DabJJnLltjZVg-ucqRgsbROQQrJUouqV/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Slide Deck
+            </a>
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1aezQBFCGgrtTR7iVoyqxLdf-xTU8knj0/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Explanatory Document
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This portfolio artifact explains how Explainable AI helps make large language models more transparent, reliable, and trustworthy. It highlights key challenges such as model opacity, bias, and post-hoc explanations while showing how validation techniques, performance metrics, and industry guardrails improve accountability.
+          </p>
+          <p className="deliverable-desc">
+            The artifact demonstrates my ability to communicate complex AI/ML concepts clearly for a non-technical audience through professional visual design and concise technical explanation.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
