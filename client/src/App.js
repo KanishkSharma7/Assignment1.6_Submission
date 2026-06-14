@@ -249,6 +249,32 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 10</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/presentation/d/1_-d_ZQUtvVUzePQUHMa7_xnMFtoL4wPc/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Slide Deck
+            </a>
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1TnZOsG1ZHFd-U32wTxw6sNsDfLG1QZFl/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Explanatory Document
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+            This artifact presents a decision matrix for selecting pre-trained AI models across NLP, computer vision, and tabular data. It compares model size, accuracy, speed, and explainability to recommend practical deployment choices for different use cases.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
