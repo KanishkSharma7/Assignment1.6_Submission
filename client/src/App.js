@@ -275,6 +275,32 @@ export default function App() {
           </p>
         </div>
 
+        <h2 className="artifact-title">Artifact 11</h2>
+        <div className="deliverable">
+          <div className="deliverable-row">
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/presentation/d/1DcrJvuG50EK5IhU6pOx3aP-AGJfRlX_G/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Slide Deck
+            </a>
+            <a
+              className="btn deliverable-btn"
+              href="https://docs.google.com/document/d/1g_pS5w9Mz86ORlK-jCiKcFbZ2isrEWrq/edit?usp=sharing&ouid=100201430942171751153&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Explanatory Document
+            </a>
+          </div>
+
+          <p className="deliverable-desc">
+          This portfolio artifact presents my final Responsible AI framework for AegisAI, integrating the major concepts developed throughout AIML-510. The framework brings together ethical principles, governance and accountability, transparency and explainability, bias and fairness, privacy and regulatory compliance, measurable RAI metrics, lifecycle monitoring, employee and customer education, long-term sustainment, and responsible system disposition. The accompanying supporting document summarizes the framework’s development across Assignments 1.3, 1.4, 2.4, 3.4, 4.4, and 5.4 and shows how each stage contributed to the final professional framework.
+          </p>
+        </div>
+
         {/* FOOTER */}
         <footer className="footer">
           <div>© {new Date().getFullYear()} {PROFILE.name}</div>
